@@ -12,6 +12,10 @@ int main() {
         cout << "Welcome to 2H budget tracker. What is your current spending limit?";
     cin >> budget;
     }while(budget<=0);
+    
+    cout << "Would you like to be in planning mode(1) or summary mode(2)?";
+    cin >> choice;
+    
 return 0;
 }
 
