@@ -52,7 +52,16 @@ int main() {
         total = rent + utilities + grocery + takeout + shopping;
         basics = rent + utilities + grocery;
         
-        cout << "This month you have spent " << total << " dollars." << endl;
+        cout << "This month you have spent " << total << " dollar(s)." << endl;
+        //overspending
+        if( total > budget){
+            cout << "You overspent by " << total-budget << " dollar(s). Graham Stephan would be disappointed! " <<endl;
+        }
+        else {
+            cout << "You stayed within your budget of " << budget << " dollar(s). To help you it is recommended that you save the remaining " << budget-total <<" dollar(s)";
+        }
+        
+        //cout << ""
     }
 return 0;
 }
